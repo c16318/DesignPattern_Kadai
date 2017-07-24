@@ -12,6 +12,10 @@ public class Book extends Item{
         
     }
     
+    public void setIsbn(String isbn){
+        this.isbn = isbn;
+    }
+    
     public void print(){
         System.out.println("書籍名 >" + this.getName());
         System.out.println("価格 　>"+ this.getPrice());

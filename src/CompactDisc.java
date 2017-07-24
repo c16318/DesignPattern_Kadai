@@ -13,6 +13,9 @@ public class CompactDisc extends Item{
         this.artist = artist;
     }
     
+    public void setArtist(String artist){
+        this.artist = artist;
+    }
     
     public void print(){
         System.out.println("タイトル    > " + this.getName());
