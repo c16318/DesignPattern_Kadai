@@ -21,5 +21,6 @@ public class CompactDisc extends Item{
         System.out.println("タイトル    > " + this.getName());
         System.out.println("アーティスト > " + artist);
         System.out.println("価格       > " + this.getPrice());
+        System.out.println();
     }
 }
