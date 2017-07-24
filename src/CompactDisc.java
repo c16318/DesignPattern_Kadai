@@ -13,14 +13,10 @@ public class CompactDisc extends Item{
         this.artist = artist;
     }
     
-    public String getArtist(){
-        return artist;
-    }
-
     
     public void print(){
         System.out.println("タイトル    > " + this.getName());
-        System.out.println("アーティスト > " + this.getArtist());
+        System.out.println("アーティスト > " + artist);
         System.out.println("価格       > " + this.getPrice());
     }
 }
