@@ -14,30 +14,25 @@ import java.util.Scanner;
  */
 public class Main {
     public static void main(String[] args){
-        int select;
         Scanner scan = new Scanner(System.in);
         ArrayList<Item> list = new ArrayList<Item>();
         ItemFactory itemFactory = new ItemFactory();
-        
-        /*Item a = new CompactDisc("cd",500,"b");
-        Item b = new Book("本",500,"d") ;
-        a.print();
-        b.print();*/
-        
-        
-        
+        int select;
+
         do{
             System.out.println("1:本 2:CD 3:LIst 4:終了");
             select = scan.nextInt();
-            if(select == 1 || select == 2){
-                list.add(itemFactory.createItem(select));
-            }
-            else if(select == 3){
+            switch(select){
+                case 1:
+                case 2:
+                    list.add(itemFactory.createItem(select));
+                    break;
+                case 3:
                 for(Item i : list){
                     i.print();
                 }
+                break;
             }
-            
         }while(select != 4);
 
     }
